@@ -9,9 +9,12 @@ $ GIT_MESSAGE="some message" papermill \
     github+https://github.com/mskimm/papermill_io_github_handler/blob/master/tests/output.ipynb \
     -p msg 'hello world' \
     --no-request-save-on-cell-execute
-   # without --no-request-save-on-cell-execute, the commits will be created each cell execution.
-   # note that: --no-request-save-on-cell-execute fixed in #ref
 ```
+
+- without `--no-request-save-on-cell-execute`, the commits will be created each cell execution.
+- note that `--no-request-save-on-cell-execute` is fixed in [link](https://github.com/nteract/papermill/pull/422/commits/045d7cbe8714d93877dc54dc383ec43254bd4c40) which will be included in the next version.
+   - Please use, `pip install git+https://github.com/nteract/papermill.git`, instead, at this moment.
+
 
 # Environment Variables
 
