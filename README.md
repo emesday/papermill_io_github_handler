@@ -1,7 +1,7 @@
 # Quick Start
 
 ```
-$ pip install papermill
+$ pip install git+https://github.com/nteract/papermill.git # see the below note.
 $ pip install git+https://github.com/mskimm/papermill_io_github_handler.git
 $ export GITHUB_API_TOKEN=...
 $ GIT_MESSAGE="some message" papermill \
