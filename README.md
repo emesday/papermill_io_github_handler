@@ -35,7 +35,7 @@ GIT_MESSAGE=<some message> # default: updated by papermill
          - `https://github.yourdomain.com` is the GitHub Enterprise URL
       ```
       $ export GITHUB_API_TOKEN=...
-      $ export GITHUB_YOURDOMAIN_COM_API_TOKEN=...
+      $ export GITHUB_YOURDOMAIN_COM_API_TOKEN=... # 'github.yourdomain.com'.replace('.', '_').upper() + '_API_TOKEN'
       $ papermill \
           github+https://github.com/mskimm/papermill_io_github_handler/blob/master/tests/sample.ipynb \
           github+https://github.yourdomain.com/mskimm/notebooks/blob/master/sample-output.ipynb \
